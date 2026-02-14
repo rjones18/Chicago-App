@@ -1,3 +1,4 @@
+
 from flask import Flask, jsonify, render_template
 from datetime import datetime
 from zoneinfo import ZoneInfo
@@ -23,4 +24,4 @@ def target():
 
 if __name__ == "__main__":
     # For local dev only. In Docker we’ll run via gunicorn.
-    app.run(host="0.0.0.0", port=8080, debug=True)
+    app.run(debug=True)
