@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Moving to Chicago Countdown</title>
+  <link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body>
+  <main class="card">
+    <header class="header">
+      <h1>🏙️ Moving to Chicago</h1>
+      <p class="sub">Countdown to October 23, 2026 (America/Chicago)</p>
+    </header>
+
+    <section class="grid">
+      <div class="countdown">
+        <div class="row">
+          <div class="box"><div class="num" id="days">--</div><div class="label">Days</div></div>
+          <div class="box"><div class="num" id="hours">--</div><div class="label">Hours</div></div>
+          <div class="box"><div class="num" id="minutes">--</div><div class="label">Minutes</div></div>
+          <div class="box"><div class="num" id="seconds">--</div><div class="label">Seconds</div></div>
+        </div>
+
+        <div class="meta">
+          <div><span class="tag">Target:</span> <span id="targetText">Loading…</span></div>
+          <div><span class="tag">Now:</span> <span id="nowText">Loading…</span></div>
+          <div class="done" id="doneText" hidden>🎉 It’s move time! Welcome to Chicago!</div>
+        </div>
+      </div>
+
+      <div class="image">
+        <img src="/static/images/chicago.jpg" alt="Chicago skyline" />
+        <p class="caption">Next stop: Chicago 🧳</p>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <small>Tip: Replace <code>static/images/chicago.jpg</code> with your own picture.</small>
+    </footer>
+  </main>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
