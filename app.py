@@ -8,7 +8,7 @@ app = Flask(__name__)
 CHICAGO_TZ = ZoneInfo("America/Chicago")
 
 # Move date: June 15, 2026 at 9:00 AM Chicago time
-MOVE_DT = datetime(2026, 6, 15, 9, 0, 0, tzinfo=CHICAGO_TZ)
+MOVE_DT = datetime(2026, 6, 15, 7, 30, 0, tzinfo=CHICAGO_TZ)
 
 @app.get("/")
 def home():
